@@ -59,6 +59,7 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    - Create test file(s) based on test_cases in task
    - Write failing tests for acceptance criteria
    - Include edge case tests
+   - Include e2e tests if applicable
    - Run tests to verify they fail appropriately
 
 2. **Implement Solution**
@@ -80,7 +81,7 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 1. **Run All Tests**
 
    ```bash
-   npm test  # or appropriate test command
+   npm test
    ```
 
    - All tests must pass
@@ -108,10 +109,15 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    - Check for TypeScript errors
    - Ensure build succeeds
 
-4. **Manual Testing** (if applicable)
-   - Test the feature manually through UI/CLI
-   - Verify user experience matches requirements
-   - Check for visual/UX issues
+4. **E2E testing** (if applicable)
+   
+   ```bash
+   npm test:e2e
+   ```
+
+   - All tests must pass
+   - No skipped tests
+   - Good coverage of new code
 
 ### Phase 4: Documentation and Commit
 
