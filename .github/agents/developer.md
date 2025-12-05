@@ -88,14 +88,15 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    - No skipped tests
    - Good coverage of new code
 
-2. **Lint and Format**
+2. **Lint, Typescript Check and Format**
 
    ```bash
    npm run lint
+   npm run type-check
    npm run format
    ```
 
-   - Fix all linting errors
+   - Fix all linting and type-check errors
    - Ensure consistent formatting
    - Follow project style guide
 

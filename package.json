@@ -8,6 +8,7 @@
     "test": "vitest",
     "test:e2e": "playwright test",
     "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
     "mastra:dev": "mastra dev -d lib/mastra",
     "mastra:build": "mastra build -d lib/mastra"
   },
