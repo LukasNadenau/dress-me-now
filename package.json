@@ -6,7 +6,7 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "vitest",
-    "test:e2e": "playwright test",
+    "test:e2e": "playwright test --project=chromium",
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "mastra:dev": "mastra dev -d lib/mastra",
