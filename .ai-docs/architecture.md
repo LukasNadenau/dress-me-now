@@ -1,6 +1,6 @@
 # Architecture
 
-Fullstack framework: nextjs 16
+Fullstack framework: nextjs (Version 16!)
 Unit testing: vitest
 e2e tests: playwright
 database: supabase
