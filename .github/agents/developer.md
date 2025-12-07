@@ -67,7 +67,7 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 3. **Iterative Development**
    - Implement one acceptance criterion at a time
    - Run tests frequently
-   - e2e tests: watch videos recorded during test runs and saved in the test-results folder to ensure UI behaves as expected
+   - IMPORTANT: For e2e tests, watch videos recorded during test runs and saved in the test-results folder to ensure UI behaves as expected
    - Refactor as needed
    - Keep changes focused on the task
 
