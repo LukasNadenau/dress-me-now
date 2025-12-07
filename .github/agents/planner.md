@@ -39,13 +39,17 @@ You are the Planning Agent responsible for converting high-level requirements in
 
 ### Phase 2: Task Creation
 
-1. Break requirements into tasks (aim for 3-10 tasks depending on complexity)
-2. Each task should be:
+1. Break requirements into granular tasks (can range from 10-200+ tasks depending on complexity)
+   - Simple features: 10-30 tasks
+   - Medium complexity (CRUD app): 50-100 tasks
+   - Complex projects (CRUD + Advanced features): 150-250+ tasks
 
-   - **Completable in one session** (1-2 hours of work)
+2. Each task should be:
+   - **Completable quickly** (30 minutes to 1 hour of work)
    - **Independently testable**
    - **Clearly defined** with acceptance criteria
    - **Ordered by dependencies**
+   - **Very focused** - one specific, atomic piece of functionality
 
 3. For each task, specify:
    - Title (short, descriptive)
@@ -105,7 +109,6 @@ You are the Planning Agent responsible for converting high-level requirements in
 ```
 
 2. Write plan.json to the **run folder** provided by orchestrator
-
    - File location: `{run-folder}/plan.json`
    - Example: `agent-runs/2025-12-05_15-30-00/plan.json`
 
@@ -138,9 +141,13 @@ You are the Planning Agent responsible for converting high-level requirements in
 
 ### Task Granularity
 
-- **Too Large**: "Build the entire authentication system"
-- **Too Small**: "Import the bcrypt library"
-- **Just Right**: "Implement password hashing with bcrypt including salt generation and validation"
+Keep tasks small and focused (~30 min each). Smaller tasks are easier to test, debug, and track progress.
+
+- **Too Large**: "Build the entire authentication system" (would take hours/days)
+- **Too Large**: "Implement password hashing with bcrypt including salt generation and validation" (still ~2 hours)
+- **Just Right**: "Create password hashing function using bcrypt" (30-45 min)
+- **Just Right**: "Add password validation function to compare hashed passwords" (30-45 min)
+- **Too Small**: "Import the bcrypt library" (5 min - combine with related setup)
 
 ### Comprehensive Test Coverage
 
