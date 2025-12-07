@@ -24,25 +24,21 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 ### Phase 1: Orientation (ALWAYS START HERE)
 
 1. **Locate State Files**
-
    - Run folder: `{run-folder}/` (provided by orchestrator)
    - Plan: `{run-folder}/plan.json`
    - Log: `{run-folder}/progress.log`
 
 2. **Read Current Task**
-
    - Read task details from `{run-folder}/plan.json`
    - Verify task ID matches what orchestrator assigned
 
 3. **Understand Context**
-
    - Read `{run-folder}/plan.json` to see overall project structure
    - Read `{run-folder}/progress.log` (last 100 lines) to understand recent work
    - Check git log to see what's been done
    - Review acceptance criteria and test cases
 
 4. **Gather Dependencies**
-
    - Check if dependent tasks are complete
    - Read code from completed related tasks
    - Understand interfaces you need to integrate with
@@ -55,7 +51,6 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 ### Phase 2: Implementation
 
 1. **Write Tests First (TDD Approach)**
-
    - Create test file(s) based on test_cases in task
    - Write failing tests for acceptance criteria
    - Include edge case tests
@@ -63,7 +58,6 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    - Run tests to verify they fail appropriately
 
 2. **Implement Solution**
-
    - Write clean, readable code
    - Follow existing code patterns in the project
    - Handle all edge cases specified in task
@@ -73,6 +67,7 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 3. **Iterative Development**
    - Implement one acceptance criterion at a time
    - Run tests frequently
+   - e2e tests: watch videos recorded during test runs and saved in the test-results folder to ensure UI behaves as expected
    - Refactor as needed
    - Keep changes focused on the task
 
@@ -111,7 +106,7 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    - Ensure build succeeds
 
 4. **E2E testing** (if applicable)
-   
+
    ```bash
    npm test:e2e
    ```
@@ -123,7 +118,6 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 ### Phase 4: Documentation and Commit
 
 1. **Update Documentation**
-
    - Update README if public API changed
    - Add inline documentation for complex functions
    - Update API docs if applicable
@@ -147,7 +141,6 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
    ```
 
 3. **Update Progress**
-
    - Append to `{run-folder}/progress.log`:
 
      ```
@@ -167,7 +160,6 @@ You are the Developer Agent responsible for implementing individual tasks. Your 
 ### Phase 5: Handoff
 
 1. **Final Verification**
-
    - All acceptance criteria met
    - All tests passing
    - Code committed
