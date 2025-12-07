@@ -13,6 +13,7 @@
     "mastra:build": "mastra build -d lib/mastra"
   },
   "dependencies": {
+    "@ai-sdk/google": "^2.0.44",
     "@mastra/core": "^0.24.6",
     "@mastra/libsql": "^0.16.3",
     "@mastra/loggers": "^0.10.19",
@@ -33,7 +34,7 @@
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
     "@xyflow/react": "^12.10.0",
-    "ai": "^5.0.107",
+    "ai": "^5.0.108",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
